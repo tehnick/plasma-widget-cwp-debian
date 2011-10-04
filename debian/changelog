@@ -1,8 +1,15 @@
-plasma-widget-cwp (1.5.5-1) unstable; urgency=low
+plasma-widget-cwp (1.5.5-0ppa1~oneiric1) oneiric; urgency=low
 
   * Update to stable release 1.5.5.
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 12 Sep 2011 00:44:51 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 12 Sep 2011 00:21:15 +0300
+
+plasma-widget-cwp (1.5.4-1ppa1~oneiric1) oneiric; urgency=low
+
+  * Packages on Launchpad were sync with packages in Debian.
+  * Changelog was cleaned.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 22 Jun 2011 23:11:18 +0300
 
 plasma-widget-cwp (1.5.4-1) unstable; urgency=low
 
