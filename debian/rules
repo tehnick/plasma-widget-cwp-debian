@@ -10,7 +10,9 @@ endif
 
 BUILDDIR = builddir
 
-PKG_NAME = plasma-widget-cwp
+PACKAGE = plasma-widget-cwp
+
+CUR_VER = $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
 
 CMAKEOPTS =	-DCMAKE_SKIP_RPATH=ON \
 			-DCMAKE_BUILD_TYPE=Release \
@@ -41,7 +43,20 @@ install: build
 	dh_testroot
 	dh_prep
 	dh_installdirs
-	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(CURDIR)/debian/$(PKG_NAME)
+	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(CURDIR)/debian/$(PACKAGE)
+get-orig-source:
+	# preparation
+	rm -rf "cwp-$(CUR_VER)" "$(PACKAGE)-$(CUR_VER)"
+	rm -f "kde-plasmoid-cwp_$(CUR_VER).orig.tar.gz"
+	# sources
+	wget -4 "http://download.opensuse.org/repositories/home:/georg298/xUbuntu_10.04/kde-plasmoid-cwp_${CUR_VER}.orig.tar.gz"
+	tar xzf "kde-plasmoid-cwp_$(CUR_VER).orig.tar.gz"
+	mv "cwp-$(CUR_VER)" "$(PACKAGE)-$(CUR_VER)"
+	# tarball
+	tar -cjf "$(PACKAGE)_$(CUR_VER).orig.tar.bz2" "$(PACKAGE)-$(CUR_VER)"
+	# cleaning
+	rm -rf "$(PACKAGE)-$(CUR_VER)"
+	rm -f "kde-plasmoid-cwp_$(CUR_VER).orig.tar.gz"
 binary-indep: build install
 binary-arch: build install
 	dh_testdir
