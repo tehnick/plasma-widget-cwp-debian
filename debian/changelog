@@ -1,10 +1,11 @@
 plasma-widget-cwp (1.5.5-1) unstable; urgency=low
 
   * Update to stable release 1.5.5.
-  * File debian/control was updated:
-    - added additional fields Vcs-Svn and Vcs-Browser
+  * Additional fields Vcs-Svn and Vcs-Browser were added in debian/control.
+  * Additional section get-orig-source was added in debian/rules.
+  * File debian/copyright was rewritten in according to DEP-5.
 
- -- Boris Pek <tehnick-8@mail.ru>  Thu, 06 Oct 2011 01:15:25 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Sat, 08 Oct 2011 23:27:43 +0300
 
 plasma-widget-cwp (1.5.4-1) unstable; urgency=low
 
