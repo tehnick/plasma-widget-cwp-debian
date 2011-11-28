@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.5.6-0ppa1~precise1) precise; urgency=low
+
+  * Update to stable release 1.5.6.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sat, 12 Nov 2011 15:51:46 +0200
+
 plasma-widget-cwp (1.5.5-0ppa2~precise1) precise; urgency=low
 
   * Some fixes in package.
