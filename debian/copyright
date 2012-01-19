@@ -1,15 +1,11 @@
-Format: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?revision=202
+Format: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?revision=248
 Debianized-By: Boris Pek <tehnick-8@mail.ru>
 Debianized-Date: Fri, 30 Apr 2010 00:03:32 +0400
 Upstream-Name: Customizable Weather Plasmoid (CWP)
-Upstream-Author: Georg Hennig <georg.hennig@web.de>
-Original-Source: http://www.kde-look.org/content/show.php/?content=98925
- Site KDE-Look.org gives only disgusting way to get files. So we can use another
- tarball from the same author (see debian/watch file).
- .
- The orig.tar.bz2 is generated from upstream gzipped tarball, except it uses
- bzip compression and correct directory name. See section get-orig-source
- in debian/rules file for details.
+Upstream-Contact: Georg Hennig <georg.hennig@web.de>
+Source: http://www.kde-look.org/content/show.php/?content=98925
+ The orig.tar.bz2 is just renamed upstream tarball (without changes).
+ See section get-orig-source in debian/rules file for details.
 
 Files: *
 Copyright: 2009-2010 Georg Hennig <georg.hennig@web.de>

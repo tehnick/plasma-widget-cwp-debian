@@ -1,3 +1,13 @@
+plasma-widget-cwp (1.5.8-1) unstable; urgency=low
+
+  * Update to stable release 1.5.8.
+  * Files debian/watch and debian/rules (in section get-orig-source) were
+    updated: unmodified bzipped tarball from kde-look.org is used now.
+  * File debian/copyright was updated in according to the last actual revision
+    of DEP-5.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Fri, 20 Jan 2012 00:13:26 +0200
+
 plasma-widget-cwp (1.5.7-1) unstable; urgency=low
 
   * Update to stable release 1.5.7.
