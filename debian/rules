@@ -10,7 +10,9 @@ endif
 
 BUILDDIR = builddir
 
-PKG_NAME = plasma-widget-cwp
+PACKAGE = plasma-widget-cwp
+
+CUR_VER = $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
 
 CMAKEOPTS =	-DCMAKE_SKIP_RPATH=ON \
 			-DCMAKE_BUILD_TYPE=Release \
@@ -41,7 +43,10 @@ install: build
 	dh_testroot
 	dh_prep
 	dh_installdirs
-	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(CURDIR)/debian/$(PKG_NAME)
+	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(CURDIR)/debian/$(PACKAGE)
+get-orig-source:
+	wget -4 -c "http://kde-look.org/CONTENT/content-files/98925-cwp-$(CUR_VER).tar.bz2"
+	mv -f "98925-cwp-$(CUR_VER).tar.bz2" "$(PACKAGE)_$(CUR_VER).orig.tar.bz2"
 binary-indep: build install
 binary-arch: build install
 	dh_testdir
