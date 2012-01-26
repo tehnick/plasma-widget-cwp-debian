@@ -46,7 +46,7 @@ install: build
 	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(CURDIR)/debian/$(PACKAGE)
 get-orig-source:
 	wget -4 -c "http://kde-look.org/CONTENT/content-files/98925-cwp-$(CUR_VER).tar.bz2"
-	mv -f "98925-cwp-$(CUR_VER).tar.bz2" "$(PACKAGE)_$(CUR_VER).orig.tar.bz2"
+	mv -f "98925-cwp-$(CUR_VER).tar.bz2" ../"$(PACKAGE)_$(CUR_VER).orig.tar.bz2"
 binary-indep: build install
 binary-arch: build install
 	dh_testdir
