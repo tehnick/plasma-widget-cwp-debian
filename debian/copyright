@@ -1,4 +1,4 @@
-Format: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?revision=248
+Format: http://anonscm.debian.org/viewvc/dep/web/deps/dep5/index.html?revision=248
 Debianized-By: Boris Pek <tehnick-8@mail.ru>
 Debianized-Date: Fri, 30 Apr 2010 00:03:32 +0400
 Upstream-Name: Customizable Weather Plasmoid (CWP)
@@ -8,7 +8,7 @@ Source: http://www.kde-look.org/content/show.php/?content=98925
  See section get-orig-source in debian/rules file for details.
 
 Files: *
-Copyright: 2009-2010 Georg Hennig <georg.hennig@web.de>
+Copyright: 2009-2012 Georg Hennig <georg.hennig@web.de>
 License: GPL-3+
  This program is free software: you can redistribute it and/or modify it under
  the terms of the GNU General Public License as published by the Free Software
@@ -26,7 +26,7 @@ License: GPL-3+
  can be found in `/usr/share/common-licenses/GPL-3'.
 
 Files: debian/*
-Copyright: 2010-2011 Boris Pek <tehnick-8@mail.ru>
+Copyright: 2010-2012 Boris Pek <tehnick-8@mail.ru>
 License: GPL-2+
  On Debian systems, the complete text of the GNU General Public License
  can be found in `/usr/share/common-licenses/GPL-2'.
