@@ -5,6 +5,7 @@ plasma-widget-cwp (1.5.8-1) unstable; urgency=low
     updated: unmodified bzipped tarball from kde-look.org is used now.
   * File debian/copyright was updated in according to the last actual revision
     of DEP-5.
+  * Add DM-Upload-Allowed: yes into debian/control.
 
  -- Boris Pek <tehnick-8@mail.ru>  Fri, 20 Jan 2012 00:13:26 +0200
 
