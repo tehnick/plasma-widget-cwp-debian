@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 7), cmake (>= 2.6.0), autotools-dev, fakeroot, kdel
 Homepage: http://kde-look.org/content/show.php/Customizable+Weather+Plasmoid+(CWP)?content=98925
 Vcs-Git: git://github.com/tehnick/plasma-widget-cwp-debian.git
 Vcs-Browser: https://github.com/tehnick/plasma-widget-cwp-debian
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 DM-Upload-Allowed: yes
 
 Package: plasma-widget-cwp
