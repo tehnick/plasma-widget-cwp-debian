@@ -14,10 +14,10 @@ PACKAGE = plasma-widget-cwp
 
 CUR_VER = $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
 
-CMAKEOPTS =	-DCMAKE_SKIP_RPATH=ON \
-			-DCMAKE_BUILD_TYPE=Release \
-			-DCMAKE_INSTALL_PREFIX=/usr \
-			../
+CMAKEOPTS = -DCMAKE_SKIP_RPATH=ON \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_INSTALL_PREFIX=/usr \
+            ../
 
 configure: configure-stamp
 configure-stamp:
