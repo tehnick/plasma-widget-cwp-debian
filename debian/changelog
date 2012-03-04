@@ -1,3 +1,11 @@
+plasma-widget-cwp (1.5.11-1) unstable; urgency=low
+
+  * Update to stable release 1.5.11.
+  * Bumped Standards-Version to 3.9.3.
+  * URL in Format field was updated in debian/copyright.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 05 Mar 2012 00:25:50 +0200
+
 plasma-widget-cwp (1.5.8-1) unstable; urgency=low
 
   * Update to stable release 1.5.8.
