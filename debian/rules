@@ -19,50 +19,25 @@ CMAKEOPTS = -DCMAKE_SKIP_RPATH=ON \
             -DCMAKE_INSTALL_PREFIX=/usr \
             ../
 
-configure: configure-stamp
-configure-stamp:
-	dh_testdir
+%:
+	dh $@ --parallel
+
+override_dh_auto_configure:
 	mkdir -p $(BUILDDIR) && cd $(BUILDDIR) && cmake $(CMAKEOPTS)
-	touch $@
-build: configure build-arch build-indep
-build-arch: build-stamp
-build-indep: build-stamp
-build-stamp:
-	dh_testdir
+
+override_dh_auto_build:
 	cd $(BUILDDIR) && $(MAKE) -j$(NUMJOBS)
-	touch $@
-clean: do-clean
-do-clean:
-	dh_testdir
+
+override_dh_auto_clean:
 	dh_testroot
 	[ ! -f Makefile ] || ( cd $(BUILDDIR) && $(MAKE) clean )
-	test ! -d $(BUILDDIR) || rm -r $(BUILDDIR)
-	dh_clean
-install: build
-	dh_testdir
-	dh_testroot
-	dh_prep
-	dh_installdirs
+	[ ! -d $(BUILDDIR) ] || rm -r $(BUILDDIR)
+
+override_dh_auto_install:
 	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(CURDIR)/debian/$(PACKAGE)
+
 get-orig-source:
 	wget -4 -c "http://kde-look.org/CONTENT/content-files/98925-cwp-$(CUR_VER).tar.bz2"
 	mv -f "98925-cwp-$(CUR_VER).tar.bz2" ../"$(PACKAGE)_$(CUR_VER).orig.tar.bz2"
-binary-indep: build install
-binary-arch: build install
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs ChangeLog
-	dh_installdocs
-	dh_installman
-	dh_link
-	dh_strip
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_shlibdeps
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install configure patch unpatch do-clean
 
+.PHONY: override_dh_auto_test
