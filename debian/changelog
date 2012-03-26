@@ -1,3 +1,10 @@
+plasma-widget-cwp (1.5.13-2) unstable; urgency=low
+
+  * debian/rules was updated: now dh is used instead of direct dh_* commands.
+    (fixes FTBFS due to broken build-arch) (Closes: #665888)
+
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 26 Mar 2012 23:25:51 +0300
+
 plasma-widget-cwp (1.5.13-1) unstable; urgency=low
 
   * Update to stable release 1.5.13.
