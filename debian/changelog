@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.5.14-0ppa1~precise1) precise; urgency=low
+
+  * Update to stable release 1.5.14.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 03 Apr 2012 19:58:04 +0300
+
 plasma-widget-cwp (1.5.13-0ppa2~precise1) precise; urgency=low
 
   * debian/rules was updated: now dh is used instead of direct dh_* commands.
