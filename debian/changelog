@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.6.0-1) unstable; urgency=low
+
+  * Update to stable release 1.6.0.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sat, 05 May 2012 23:01:02 +0300
+
 plasma-widget-cwp (1.5.14-1) unstable; urgency=low
 
   * Update to stable release 1.5.14.
