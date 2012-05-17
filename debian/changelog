@@ -1,3 +1,14 @@
+plasma-widget-cwp (1.6.2-0ppa2~quantal1) quantal; urgency=low
+
+  * debian/rules was updated:
+    - now uscan is used instead of direct using of wget and mv commands
+    - used dpkg-buildflags and hardening flags in compiler options
+    - added useful option -Wl,--as-needed to LDFLAGS
+    - deleted few sections to simplify the rules:
+      override_dh_auto_build, override_dh_auto_clean, override_dh_auto_install
+
+ -- Boris Pek <tehnick-8@mail.ru>  Thu, 17 May 2012 21:51:13 +0300
+
 plasma-widget-cwp (1.6.2-0ppa1~quantal1) quantal; urgency=low
 
   * Update to stable release 1.6.2.
