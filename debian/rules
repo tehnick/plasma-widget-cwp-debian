@@ -1,17 +1,20 @@
 #!/usr/bin/make -f
 
+include /usr/share/hardening-includes/hardening.make
+
 CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
-CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
-CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
-LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(HARDENING_CFLAGS)
+CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(HARDENING_CXXFLAGS)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS) $(HARDENING_LDFLAGS)
+LDFLAGS:=-Wl,--as-needed $(LDFLAGS)
 
 BUILDDIR = builddir
 
 CMAKEOPTS = -DCMAKE_SKIP_RPATH=ON \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_INSTALL_PREFIX=/usr \
-            -DCMAKE_C_FLAGS="$(CFLAGS)" \
-            -DCMAKE_CXX_FLAGS="$(CXXFLAGS)" \
+            -DCMAKE_C_FLAGS="$(CFLAGS) $(CPPFLAGS)" \
+            -DCMAKE_CXX_FLAGS="$(CXXFLAGS) $(CPPFLAGS)" \
             -DCMAKE_SHARED_LINKER_FLAGS="$(LDFLAGS)" \
             -DCMAKE_MODULE_LINKER_FLAGS="$(LDFLAGS)" \
             -DCMAKE_EXE_LINKER_FLAGS="$(LDFLAGS)" \
