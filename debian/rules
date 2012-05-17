@@ -1,43 +1,32 @@
 #!/usr/bin/make -f
 
-ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
-	NUMJOBS = $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
-endif
+include /usr/share/hardening-includes/hardening.make
 
-ifeq (,$(NUMJOBS))
-	NUMJOBS = 1
-endif
+CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(HARDENING_CFLAGS)
+CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(HARDENING_CXXFLAGS)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS) $(HARDENING_LDFLAGS)
+LDFLAGS:=-Wl,--as-needed $(LDFLAGS)
 
 BUILDDIR = builddir
-
-PACKAGE = plasma-widget-cwp
-
-CUR_VER = $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
 
 CMAKEOPTS = -DCMAKE_SKIP_RPATH=ON \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_INSTALL_PREFIX=/usr \
+            -DCMAKE_C_FLAGS="$(CFLAGS) $(CPPFLAGS)" \
+            -DCMAKE_CXX_FLAGS="$(CXXFLAGS) $(CPPFLAGS)" \
+            -DCMAKE_SHARED_LINKER_FLAGS="$(LDFLAGS)" \
+            -DCMAKE_MODULE_LINKER_FLAGS="$(LDFLAGS)" \
+            -DCMAKE_EXE_LINKER_FLAGS="$(LDFLAGS)" \
             ../
 
 %:
-	dh $@ --parallel
+	dh $@ --parallel  --builddirectory=$(BUILDDIR)
 
 override_dh_auto_configure:
 	mkdir -p $(BUILDDIR) && cd $(BUILDDIR) && cmake $(CMAKEOPTS)
 
-override_dh_auto_build:
-	cd $(BUILDDIR) && $(MAKE) -j$(NUMJOBS)
-
-override_dh_auto_clean:
-	dh_testroot
-	[ ! -f Makefile ] || ( cd $(BUILDDIR) && $(MAKE) clean )
-	[ ! -d $(BUILDDIR) ] || rm -r $(BUILDDIR)
-
-override_dh_auto_install:
-	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(CURDIR)/debian/$(PACKAGE)
-
 get-orig-source:
-	wget -4 -c "http://kde-look.org/CONTENT/content-files/98925-cwp-$(CUR_VER).tar.bz2"
-	mv -f "98925-cwp-$(CUR_VER).tar.bz2" ../"$(PACKAGE)_$(CUR_VER).orig.tar.bz2"
+	uscan --noconf --verbose --force-download --rename --download-current-version --destdir=..
 
 .PHONY: override_dh_auto_test
