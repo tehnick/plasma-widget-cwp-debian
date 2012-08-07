@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.6.3-0ppa1~quantal1) quantal; urgency=low
+
+  * Update to stable release 1.6.3.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 07 Aug 2012 23:36:01 +0300
+
 plasma-widget-cwp (1.6.2-0ppa3~quantal1) quantal; urgency=low
 
   * debian/rules was updated: removed hardening flags
