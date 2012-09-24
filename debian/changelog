@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.6.4-0ppa1~quantal1) quantal; urgency=low
+
+  * Update to stable release 1.6.4.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 24 Sep 2012 22:40:37 +0300
+
 plasma-widget-cwp (1.6.3-0ppa1~quantal1) quantal; urgency=low
 
   * Update to stable release 1.6.3.
