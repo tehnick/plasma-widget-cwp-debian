@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.7.3-1) experimental; urgency=low
+
+  * Update to stable release 1.7.3.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 17 Apr 2013 00:26:54 +0300
+
 plasma-widget-cwp (1.7.2-1) experimental; urgency=low
 
   * Update to stable release 1.7.2.
