@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.7.3-2) unstable; urgency=low
+
+  * Move package to unstable: no changes required.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 12 May 2013 17:06:35 +0300
+
 plasma-widget-cwp (1.7.3-1) experimental; urgency=low
 
   * Update to stable release 1.7.3.
