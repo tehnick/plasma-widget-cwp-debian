@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.7.3-2~bpo70+1) wheezy-backports; urgency=low
+
+  * Rebuild for wheezy-backports.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 28 May 2013 23:11:50 +0300
+
 plasma-widget-cwp (1.7.3-2) unstable; urgency=low
 
   * Move package to unstable: no changes required.
