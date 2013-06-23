@@ -1,2 +1,0 @@
-# False positives for lintian tag hardening-no-fortify-functions.
-plasma-widget-cwp: hardening-no-fortify-functions usr/lib/kde4/plasma_applet_cwp.so
