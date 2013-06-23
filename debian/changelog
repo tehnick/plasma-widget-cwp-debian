@@ -1,158 +1,152 @@
-plasma-widget-cwp (1.7.3-0ppa1~raring1) raring; urgency=low
+plasma-widget-cwp (1.8.0-1) unstable; urgency=low
+
+  * Update to stable release 1.8.0.
+  * Remove obsolete DM-Upload-Allowed flag.
+  * Bump Standards-Version to 3.9.4 (was 3.9.3): no changes required.
+  * Delete debian/plasma-widget-cwp.lintian-overrides:
+    this false positive has been fixed in lintian.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 23 Jun 2013 13:25:39 +0300
+
+plasma-widget-cwp (1.7.3-2) unstable; urgency=low
+
+  * Move package to unstable: no changes required.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 12 May 2013 17:06:35 +0300
+
+plasma-widget-cwp (1.7.3-1) experimental; urgency=low
 
   * Update to stable release 1.7.3.
 
- -- Boris Pek <tehnick-8@mail.ru>  Wed, 17 Apr 2013 00:22:09 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 17 Apr 2013 00:26:54 +0300
 
-plasma-widget-cwp (1.7.2-0ppa1~raring1) raring; urgency=low
+plasma-widget-cwp (1.7.2-1) experimental; urgency=low
 
   * Update to stable release 1.7.2.
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 15 Apr 2013 21:35:51 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 15 Apr 2013 21:46:10 +0300
 
-plasma-widget-cwp (1.7.0-0ppa1~raring1) raring; urgency=low
+plasma-widget-cwp (1.7.0-1) experimental; urgency=low
 
   * Update to stable release 1.7.0.
 
- -- Boris Pek <tehnick-8@mail.ru>  Sun, 17 Feb 2013 23:27:00 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 18 Feb 2013 00:21:17 +0200
 
-plasma-widget-cwp (1.6.13-0ppa1~raring1) raring; urgency=low
+plasma-widget-cwp (1.6.13-1) experimental; urgency=low
 
   * Update to stable release 1.6.13.
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 11 Feb 2013 21:15:36 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 11 Feb 2013 21:54:35 +0200
 
-plasma-widget-cwp (1.6.12-0ppa1~raring1) raring; urgency=low
+plasma-widget-cwp (1.6.12-1) experimental; urgency=low
 
   * Update to stable release 1.6.12.
+  * Simplify debian/rules.
+  * Add debian/plasma-widget-cwp.lintian-overrides:
+    false positives for lintian tag hardening-no-fortify-functions.
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 14 Jan 2013 01:38:50 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 15 Jan 2013 23:11:43 +0200
 
-plasma-widget-cwp (1.6.11-0ppa1~raring1) raring; urgency=low
+plasma-widget-cwp (1.6.11-1) unstable; urgency=low
 
   * Update to stable release 1.6.11.
+  * XML files with rules for parsing *.weather.com web sites were fixed
+    in upstream. (Closes: #696042)
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 07 Jan 2013 15:42:44 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 08 Jan 2013 01:12:01 +0200
 
-plasma-widget-cwp (1.6.10-0ppa1~raring1) raring; urgency=low
-
-  * Update to stable release 1.6.10.
-
- -- Boris Pek <tehnick-8@mail.ru>  Sat, 29 Dec 2012 15:11:25 +0200
-
-plasma-widget-cwp (1.6.9-0ppa1~raring1) raring; urgency=low
-
-  * Update to stable release 1.6.9.
-
- -- Boris Pek <tehnick-8@mail.ru>  Sat, 17 Nov 2012 00:15:10 +0200
-
-plasma-widget-cwp (1.6.8-0ppa1~raring1) raring; urgency=low
+plasma-widget-cwp (1.6.8-1) unstable; urgency=low
 
   * Update to stable release 1.6.8.
 
- -- Boris Pek <tehnick-8@mail.ru>  Wed, 14 Nov 2012 21:34:22 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Thu, 15 Nov 2012 19:24:20 +0200
 
-plasma-widget-cwp (1.6.7-0ppa1~raring1) raring; urgency=low
+plasma-widget-cwp (1.6.7-1) unstable; urgency=low
 
   * Update to stable release 1.6.7.
 
- -- Boris Pek <tehnick-8@mail.ru>  Sat, 03 Nov 2012 22:32:48 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Sat, 03 Nov 2012 23:09:49 +0200
 
-plasma-widget-cwp (1.6.6-0ppa1~quantal1) quantal; urgency=low
-
-  * Update to stable release 1.6.6.
-
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 22 Oct 2012 23:10:05 +0300
-
-plasma-widget-cwp (1.6.5-0ppa1~quantal1) quantal; urgency=low
+plasma-widget-cwp (1.6.5-1) unstable; urgency=low
 
   * Update to stable release 1.6.5.
 
- -- Boris Pek <tehnick-8@mail.ru>  Sun, 07 Oct 2012 20:09:15 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 07 Oct 2012 20:15:15 +0300
 
-plasma-widget-cwp (1.6.4-0ppa1~quantal1) quantal; urgency=low
+plasma-widget-cwp (1.6.4-1) unstable; urgency=low
 
   * Update to stable release 1.6.4.
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 24 Sep 2012 22:40:37 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 24 Sep 2012 22:47:27 +0300
 
-plasma-widget-cwp (1.6.3-0ppa1~quantal1) quantal; urgency=low
+plasma-widget-cwp (1.6.3-1) unstable; urgency=low
 
   * Update to stable release 1.6.3.
 
- -- Boris Pek <tehnick-8@mail.ru>  Tue, 07 Aug 2012 23:36:01 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 07 Aug 2012 23:41:21 +0300
 
-plasma-widget-cwp (1.6.2-0ppa3~quantal1) quantal; urgency=low
+plasma-widget-cwp (1.6.2-2) unstable; urgency=low
 
   * debian/rules was updated: removed hardening flags
 
- -- Boris Pek <tehnick-8@mail.ru>  Thu, 17 May 2012 23:32:38 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Fri, 18 May 2012 00:28:53 +0300
 
-plasma-widget-cwp (1.6.2-0ppa2~quantal1) quantal; urgency=low
+plasma-widget-cwp (1.6.2-1) unstable; urgency=low
 
-  * debian/rules was updated:
+  * Update to stable release 1.6.2.
+  * debian/rules was updated: 
     - now uscan is used instead of direct using of wget and mv commands
     - used dpkg-buildflags and hardening flags in compiler options
     - added useful option -Wl,--as-needed to LDFLAGS
     - deleted few sections to simplify the rules:
       override_dh_auto_build, override_dh_auto_clean, override_dh_auto_install
 
- -- Boris Pek <tehnick-8@mail.ru>  Thu, 17 May 2012 21:51:13 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Thu, 17 May 2012 21:13:24 +0300
 
-plasma-widget-cwp (1.6.2-0ppa1~quantal1) quantal; urgency=low
-
-  * Update to stable release 1.6.2.
-
- -- Boris Pek <tehnick-8@mail.ru>  Sun, 13 May 2012 17:07:21 +0300
-
-plasma-widget-cwp (1.6.1-0ppa1~quantal1) quantal; urgency=low
+plasma-widget-cwp (1.6.1-1) unstable; urgency=low
 
   * Update to stable release 1.6.1.
 
- -- Boris Pek <tehnick-8@mail.ru>  Sun, 06 May 2012 21:20:16 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 06 May 2012 21:24:04 +0300
 
-plasma-widget-cwp (1.6.0-0ppa1~quantal1) quantal; urgency=low
+plasma-widget-cwp (1.6.0-1) unstable; urgency=low
 
   * Update to stable release 1.6.0.
 
- -- Boris Pek <tehnick-8@mail.ru>  Sat, 05 May 2012 21:42:01 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Sat, 05 May 2012 23:01:02 +0300
 
-plasma-widget-cwp (1.5.14-0ppa1~precise1) precise; urgency=low
+plasma-widget-cwp (1.5.14-1) unstable; urgency=low
 
   * Update to stable release 1.5.14.
 
- -- Boris Pek <tehnick-8@mail.ru>  Tue, 03 Apr 2012 19:58:04 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Fri, 06 Apr 2012 20:58:39 +0300
 
-plasma-widget-cwp (1.5.13-0ppa2~precise1) precise; urgency=low
+plasma-widget-cwp (1.5.13-2) unstable; urgency=low
 
   * debian/rules was updated: now dh is used instead of direct dh_* commands.
     (fixes FTBFS due to broken build-arch) (Closes: #665888)
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 26 Mar 2012 23:45:22 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 26 Mar 2012 23:25:51 +0300
 
-plasma-widget-cwp (1.5.13-0ppa1~precise1) precise; urgency=low
+plasma-widget-cwp (1.5.13-1) unstable; urgency=low
 
   * Update to stable release 1.5.13.
 
- -- Boris Pek <tehnick-8@mail.ru>  Thu, 22 Mar 2012 23:58:54 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 26 Mar 2012 20:38:54 +0300
 
-plasma-widget-cwp (1.5.12-0ppa1~precise1) precise; urgency=low
+plasma-widget-cwp (1.5.12-1) unstable; urgency=low
 
   * Update to stable release 1.5.12.
 
- -- Boris Pek <tehnick-8@mail.ru>  Tue, 13 Mar 2012 19:53:31 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Thu, 15 Mar 2012 19:36:24 +0200
 
-plasma-widget-cwp (1.5.11-0ppa1~precise1) precise; urgency=low
+plasma-widget-cwp (1.5.11-1) unstable; urgency=low
 
   * Update to stable release 1.5.11.
+  * Bumped Standards-Version to 3.9.3.
+  * URL in Format field was updated in debian/copyright.
 
- -- Boris Pek <tehnick-8@mail.ru>  Wed, 29 Feb 2012 23:15:36 +0200
-
-plasma-widget-cwp (1.5.10-0ppa1~precise1) precise; urgency=low
-
-  * Update to stable release 1.5.10.
-
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 20 Feb 2012 21:20:51 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 05 Mar 2012 00:25:50 +0200
 
 plasma-widget-cwp (1.5.8-1) unstable; urgency=low
 
