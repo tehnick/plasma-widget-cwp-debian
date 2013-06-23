@@ -1,3 +1,13 @@
+plasma-widget-cwp (1.8.0-1) unstable; urgency=low
+
+  * Update to stable release 1.8.0.
+  * Remove obsolete DM-Upload-Allowed flag.
+  * Bump Standards-Version to 3.9.4 (was 3.9.3): no changes required.
+  * Delete debian/plasma-widget-cwp.lintian-overrides:
+    this false positive has been fixed in lintian.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 23 Jun 2013 13:25:39 +0300
+
 plasma-widget-cwp (1.7.3-2) unstable; urgency=low
 
   * Move package to unstable: no changes required.
