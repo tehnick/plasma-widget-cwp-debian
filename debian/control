@@ -1,7 +1,7 @@
 Source: plasma-widget-cwp
 Section: kde
 Priority: extra
-Maintainer: Boris Pek <tehnick-8@mail.ru>
+Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 7.0.50~),
  cmake, autotools-dev, fakeroot, kdelibs5-dev
 Homepage: http://kde-look.org/content/show.php/Customizable+Weather+Plasmoid+(CWP)?content=98925
