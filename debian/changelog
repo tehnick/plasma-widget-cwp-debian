@@ -1,8 +1,8 @@
-plasma-widget-cwp (1.8.1-1~bpo70+1) wheezy-backports; urgency=low
+plasma-widget-cwp (1.8.2-1) unstable; urgency=low
 
-  * Rebuild for wheezy-backports.
+  * Update to stable release 1.8.2.
 
- -- Boris Pek <tehnick@debian.org>  Tue, 06 Aug 2013 23:04:01 +0300
+ -- Boris Pek <tehnick@debian.org>  Fri, 20 Sep 2013 19:45:18 +0300
 
 plasma-widget-cwp (1.8.1-1) unstable; urgency=low
 
