@@ -1,33 +1,27 @@
-plasma-widget-cwp (1.9.0-0ppa1~trusty1) trusty; urgency=low
+plasma-widget-cwp (1.9.0-1) unstable; urgency=low
 
   * Update to stable release 1.9.0.
+  * Update get-orig-source section in debian/rules.
 
- -- Boris Pek <tehnick@debian.org>  Wed, 06 Nov 2013 01:16:51 +0200
+ -- Boris Pek <tehnick@debian.org>  Wed, 13 Nov 2013 04:02:59 +0200
 
-plasma-widget-cwp (1.8.3-0ppa1~saucy1) saucy; urgency=low
+plasma-widget-cwp (1.8.3-1) unstable; urgency=low
 
   * Update to stable release 1.8.3.
 
- -- Boris Pek <tehnick@debian.org>  Thu, 17 Oct 2013 01:26:32 +0300
+ -- Boris Pek <tehnick@debian.org>  Thu, 17 Oct 2013 01:32:38 +0300
 
-plasma-widget-cwp (1.8.2-0ppa1~saucy1) saucy; urgency=low
+plasma-widget-cwp (1.8.2-1) unstable; urgency=low
 
   * Update to stable release 1.8.2.
 
- -- Boris Pek <tehnick@debian.org>  Fri, 20 Sep 2013 19:34:15 +0300
+ -- Boris Pek <tehnick@debian.org>  Fri, 20 Sep 2013 19:45:18 +0300
 
-plasma-widget-cwp (1.8.1-0ppa1~saucy1) saucy; urgency=low
+plasma-widget-cwp (1.8.1-1) unstable; urgency=low
 
   * Update to stable release 1.8.1.
 
- -- Boris Pek <tehnick@debian.org>  Fri, 26 Jul 2013 21:47:50 +0300
-
-plasma-widget-cwp (1.8.0-1ppa1~saucy1) saucy; urgency=low
-
-  * Packages on Launchpad were sync with packages in Debian.
-  * Changelog was cleaned.
-
- -- Boris Pek <tehnick-8@mail.ru>  Sun, 23 Jun 2013 13:35:53 +0300
+ -- Boris Pek <tehnick@debian.org>  Fri, 26 Jul 2013 22:49:05 +0300
 
 plasma-widget-cwp (1.8.0-1) unstable; urgency=low
 
