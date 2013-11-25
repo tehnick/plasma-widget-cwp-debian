@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.9.0-1~bpo70+1) wheezy-backports; urgency=low
+
+  * Rebuild for wheezy-backports.
+
+ -- Boris Pek <tehnick@debian.org>  Mon, 25 Nov 2013 06:24:29 +0200
+
 plasma-widget-cwp (1.9.0-1) unstable; urgency=low
 
   * Update to stable release 1.9.0.
