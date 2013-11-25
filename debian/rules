@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+DEBIAN_PATH  := $(abspath $(dir $(firstword $(MAKEFILE_LIST))))
+
 CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
 CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
 LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
@@ -15,6 +17,6 @@ override_dh_auto_configure:
 	dh_auto_configure -- $(CMAKEOPTS)
 
 get-orig-source:
-	uscan --noconf --verbose --force-download --rename --download-current-version
+	uscan --noconf --verbose --force-download --rename $(DEBIAN_PATH) --destdir $(CURDIR)
 
 .PHONY: override_dh_auto_test
