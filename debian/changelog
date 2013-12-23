@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.9.1-0ppa1~trusty1) trusty; urgency=medium
+
+  * Update to stable release 1.9.1.
+
+ -- Boris Pek <tehnick@debian.org>  Mon, 23 Dec 2013 23:49:43 +0400
+
 plasma-widget-cwp (1.9.0-1ppa1~trusty1) trusty; urgency=low
 
   * Packages on Launchpad were sync with packages in Debian.
