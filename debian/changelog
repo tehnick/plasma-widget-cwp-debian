@@ -1,3 +1,10 @@
+plasma-widget-cwp (1.9.1-1) unstable; urgency=medium
+
+  * Update to stable release 1.9.1.
+  * Bump Standards-Version to 3.9.5 (was 3.9.4): no changes required.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 24 Dec 2013 13:28:01 +0400
+
 plasma-widget-cwp (1.9.0-1) unstable; urgency=low
 
   * Update to stable release 1.9.0.
