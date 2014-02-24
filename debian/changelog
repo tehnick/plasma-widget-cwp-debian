@@ -1,3 +1,9 @@
+plasma-widget-cwp (1.10.1-0ppa1~trusty1) trusty; urgency=medium
+
+  * Update to stable release 1.10.1.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 25 Feb 2014 00:38:23 +0400
+
 plasma-widget-cwp (1.10.0-1) unstable; urgency=medium
 
   * Update to stable release 1.10.0.
