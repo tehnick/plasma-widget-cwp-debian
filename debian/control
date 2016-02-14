@@ -5,7 +5,7 @@ Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 9),
  cmake, autotools-dev, fakeroot, kdelibs5-dev
 Homepage: http://kde-look.org/content/show.php/Customizable+Weather+Plasmoid+(CWP)?content=98925
-Vcs-Git: git://github.com/tehnick/plasma-widget-cwp-debian.git
+Vcs-Git: https://github.com/tehnick/plasma-widget-cwp-debian.git
 Vcs-Browser: https://github.com/tehnick/plasma-widget-cwp-debian
 Standards-Version: 3.9.6
 
