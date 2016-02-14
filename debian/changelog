@@ -1,3 +1,12 @@
+plasma-widget-cwp (1.12.1-0ppa1~xenial1) xenial; urgency=medium
+
+  * New stable release.
+  * Bump Standards-Version to 3.9.6 (was 3.9.5): no changes required.
+  * Bump debhelper version to 9 (was 7.0.50~); update debian/compat.
+  * Fix lintian warning vcs-field-uses-insecure-uri.
+
+ -- Boris Pek <tehnick@debian.org>  Sun, 14 Feb 2016 22:02:00 +0300
+
 plasma-widget-cwp (1.12.0-0ppa1~vivid1) vivid; urgency=medium
 
   * Update to stable release 1.12.0.
